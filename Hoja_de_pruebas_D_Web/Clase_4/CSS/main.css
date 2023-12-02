@@ -1,0 +1,76 @@
+/* Vamos a aplicar un estilo a todo el html, para eso usamos el asterisco */
+/* Aca vamos a resetear los estilos predeterminados del navegador */
+*{
+    margin: 0; /* margen externo de las etiquetas*/
+    padding: 0; /* margen interno de las etiquetas (cuanto se le agrega a la caja la caja) (aleja al borde de los textos) */
+    box-sizing: border-box; /* hace que la caja nunca supere el tamaño que se le da con width y height*/
+    /* antes se armaba la caja y luego se le sumaba espacio con el padding y el border, ahora estos ocupan el espacio por dentro y no por fuera de la caja */
+
+} /* Estos ultimos 3 reseteos conviene hacerlos siempre*/
+    
+/* Estilos de "caja" */
+.caja1{
+    background-color: tomato;
+    margin: 100px; /* al poner un valor nada mas este hace referencia a todos los lados */
+    width: 200px; /* ancho de la caja */
+    height: 200px; /* altura de la caja */
+    overflow: auto; /* cuando la caja es mas chica que el texto, este estilo sirve para resolver que se hace con ese texto extra */
+}
+
+.caja2{
+    background-color: blue;
+    margin: 50px 150px; /* al poner 2 el orden pasa a ser: arriba y abajo , costados */
+}
+
+.caja3{
+    background-color: rgb(187, 255, 0);
+    margin: 100px 20px 50px; /* al poner 3 el orden pasa a ser: arriba costados abajo */
+}
+
+.caja4{
+    background-color: green;
+    margin: 100px 20px 50px 200px; /* al poner 4 el orden pasa a ser: arriba derecha abajo izquierda (reloj) */
+    padding: 20px; /* esta caja va a ocupar mas espacio */
+    border: 2px solid red; /* esta caja tendrá borde */
+    
+}
+
+.caja5{
+    background-color: rgb(128, 0, 79);
+    margin-top: 50px; /* tambien podemos aplicar propiedades a un lado especifico */
+    margin-left: 333px;
+    margin-bottom: 5px;
+    margin-right: 100px;
+}
+
+/* todo lo mencionado hasta acá funciona igual para el padding*/
+
+
+/* Ejemplo de display */
+.contenedor{
+    background-color: cornsilk;
+    margin: 100px;
+}
+
+.hijo{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: 50px;
+
+    /* propiedad display */
+    display: none; /* No muestra los elementos */
+    display: inline; /* Las convierte en etiqueta de linea */
+    display: inline-block; /* Las convierte en etiquetas de bloque en linea (tambien respeta las propiedades de altura) */
+}
+
+/* Ahora vamos a trabajar con imagenes */
+.item-relative{
+    position: relative;
+    top: 40px;
+    left: 20px;
+}
+
+.item-absolute{
+    position: absolute;
+}

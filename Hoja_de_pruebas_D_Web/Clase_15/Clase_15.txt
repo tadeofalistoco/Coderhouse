@@ -1,0 +1,35 @@
+SEO y buenas practicas
+
+SEO (Search Engine Optimization)
+-Optimizacion para los Motores de Busqueda
+-Sirve para aumentar la cantidad y calidad de usuarios que visitan nuestra pagina
+-Atrae trafico gratuito, ya que no hace falta hacer publicidad para aparecer en las busquedas
+-Cuanto mas contenido optimizado haya, mas posibilidades de aumentar este trafico
+
+ASPECTOS NEGATIVOS
+-Cumplir estas reglas no garantiza un buen posicionamiento
+-Los resultados son lentos
+-Los resultados son dificiles de controlar
+
+Entre algunos, hay 4 tipos distintos de SEO (los primeros dos son los que vamos a trabajar mas) (los ultimos dos los utiliza la gente que se especializa mas en todo ese mundo)
+
+    On-page: Va de la mano del contenido del codigo
+                -etiquetas meta name="description"
+                -keywords (ya no se utiliza tanto / los motores de busqueda no lo premian tanto)
+                -titulos de paginas (etiqueta title)
+                -jerarquia de encabezados
+                -contenido textual (todo el contenido del body):
+
+    Off-page: Todo lo que pasa por afuera de la pagina
+                -Que nuestras redes sociales y todo lo relacionado a nuestra pagina vaya en armonia con nuestro producto y con el contenido de la pagina
+
+    Tecnico:
+            -Organizar la jerarquia de archivos
+            -Agregar un mapa de sitio: es como el indice de un libro
+            -Solo se usa si el proyecto es enorme
+                -En nuestro caso lo podriamos poner en el footer
+            -Estrategias de optimizacion movil (darle bola al formato mobile)
+
+    Local: 
+            -Es algo muy especifico que el cliente tendria que contrar a parte
+            

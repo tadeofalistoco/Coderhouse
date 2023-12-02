@@ -1,0 +1,73 @@
+Hoy veremos listas:
+    -Ordenadas: Pasos en orden de una receta
+    -Desordenadas: Lista de compras sin importancia en el hombre
+
+Lista ordenada se crea con "ol"
+    Dentro se pone "li"
+
+Lista desordenada se crea con "ul"
+    Dentro se pone "li" al igual que la desordenada
+
+La etiqueta "a" funciona para hacer links/enlaces (absolutos/internos/relativos)
+    En href= ponemos el link al que queremos redirigir
+
+ENLACES ABSOLUTOS
+1- Ponemos "a"
+2- En href= ponemos el link al que queremos redirigir
+3- Para que al abrir ese link, se abra en una pestaña aparte, ponemos:
+    " target="_blank" " luego de las comillas del href
+
+ENLACES INTERNOS
+1- Ponemos "a"
+2- Utilizamos una palabra clave entre las comillas del href con un "#" al comienzo
+3- Ponemos "id" a la altura del html que querramos referenciar
+4- En el id ponemos entre las comillas la palabra clave del href pero esta vez sin el "#"
+
+ENLACES RELATIVOS
+1- Ponemos "a" donde querramos que este el link
+2- En el href ponemos el nombre de la carpeta a la que queremos acceder
+    (Con el nivel de especificación necesario)
+
+Despues vimos como agregar imagenes:
+    1- Con la etiqueta "img"
+    2- En src se pone la carpeta donde estaba la imagen y despues el nombre de la imagen
+    3- En alt se pone una descripcion de la imagen:
+        +Para personas no videntes
+        +Por si no carga la imagen
+
+Agregar videos o mapas o listas de reproduccion (dirigidos de otro sitio)
+1- "iframe"
+2- En "src" ponemos el link
+
+Armar formularios
+1- Etiqueta "form"
+2- Tab, etiqueta "fieldset"
+3- Tab, etiqueta "legend" (titulo del formulario)
+4- Mirar todo lo que puse en "productos.html"
+
+TABLAS
+1- "tbody"
+2- Tab, "table"
+3- Tab, "tr" (una por cada fila)
+4- Tab, "td" (una por cada celda) (aca se escriben los contenidos)
+
+
+ETIQUETAS
+
+HEAD
+link
+title
+
+
+BODY 
+
+header (encabezado)
+    nav (para poner adentro una lista con los nombres del resto de paginas)
+        ul (lista)
+              li (para agregarle una clase al nombre de la pagina)
+              <li> <a href="ruta de la pagina")> Nombre de la pagina </a> </li>
+              asi con las 5 paginas
+
+main (todo el resto)
+
+footer(pie de pagina)

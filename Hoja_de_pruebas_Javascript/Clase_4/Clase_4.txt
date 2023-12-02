@@ -1,0 +1,9 @@
+FUNCIONES
+
+-Son iguales que en python
+-Recordar que una variable creada dentro de la declaracion de una funcion solo vive dentro de ella
+    -Por lo tanto si quiero invocar esa variable por fuera de la funcion esto dara error ya que la variable no existe
+
+-SCOPE: variables globales y locales
+    -Globales: se declaran fuera de cualquier funcion o bloque, y pueden ser invocadas en cualquier lugar, ya que ya fue declarada globalmente
+    -Locales: se declaran dentro de una funcion o bloque, por lo tanto solo vive dentro de esta, si intentamos invocarla fuera de su respectivo bloque esta dará error

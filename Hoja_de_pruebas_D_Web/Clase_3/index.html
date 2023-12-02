@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Arriba del title ponemos el link de nuestro archivo.css -->
+    <link rel="stylesheet" href="CSS/styles.css">  <!-- la ruta se pone dentro de href -->
+    <title> Clase 03 - CSS </title>
+    <!-- El siguiente es un estilo desde el head -->
+    <style>
+        h2{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- El siguiente es un estilo en linea -->
+    <h1 style="color: red;"> H1 Hola mundo en linea </h1>
+
+    <!-- El siguiente va a estar referenciado por el estilo desde el head -->
+    <h2> H2 Hola mundo desde el head </h2>
+
+    <!-- El siguiente va a estar referenciado por un estilo desde el archivo.css -->
+    <h3> H3 Hola mundo desde archivo.css </h3>
+
+    <!-- Aca vamos a aplicar una class que tendra prioridad ante el estilo aplicado a los h3 -->
+    <h3 class="ejemplo_class"> H3 Hola mundo con class </h3>
+
+    <!-- Ahora vamos a hacer lo mismo pero con id -->
+    <h3 id="ejemplo_id"> H3 Hola mundo con id </h3>
+
+    <!-- Este es un ejemplo de jerarquias de estilos con !important -->
+    <h4 style="color: palevioletred;"> H4 Hola mundo con !important</h4>
+</body>
+</html>
+

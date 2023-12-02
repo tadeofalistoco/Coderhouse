@@ -1,0 +1,126 @@
+GIT 
+
+GIT es un sistema de control de versiones gratuito
+    -Este nos sirve para viajar en el tiempo de nuestro código
+    -Para corregir errores por ejemplo
+    -Para trabajar distintas versiones de un mismo protecto en paralelo
+    -Este trabaja de manera local, controlamos las verisones desde nuestra consola
+    -Git-Hub trabaja estas versiones en la nube, es una red social de programadores (es como una especie de drive)
+
+
+LOS 3 ESTADOS DE GIT
+    -Working Directory: -Preparamos una caja para meter un producto adentro y luego cerrar la caja para enviarlo
+                        -Creamos un repositorio (vacio) sujeto a cambios
+
+usamos "git add" para pasar al staging area
+
+    -Staging Area: -Metemos el producto dentro de la caja
+                   -Subimos los archivos al repositorio
+
+usamos "git commit" para pasar al repository
+
+    -Repository: -Cerramos la caja, le ponemos una etiqueta para que se sepa lo que tiene adentro, y lo enviamos a donde debamos enviarlo
+                 -Enviamos el repositorio a Git-Hub
+
+
+COMANDOS DE GIT
+
+CREACION DE REPOSITORIO
+-Para iniciar/crear un repositorio de la carpeta donde estamos parados 
+    git init 
+-Para revisar que archivos tengo dentro de la carpeta y en cual de los 3 estados de Git se encuentran
+    git status
+-Para agregar estos archivos al repositorio uno a la vez (pasamos de Working Directory a Staging Area)
+    git add nombredelarchivo
+-Para agregar estos archivos al repositorio todos de una vez (pasamos de Working Directory a Staging Area)
+    git add .
+-Para realizar un commit, osea dejar guardada esa version del codigo (pasamos de Staging Area a Repository)
+    git commit -m "mensaje descriptivo de los cambios efectuados"
+-Para conectar repositorio de Git con repositorio de Git-Hub
+    -git remote add origin link_del_repositorio_de_github
+-Para desconectar repositorio de Git con repositorio de Git-Hub 
+    -git remote remove origin
+-Para enviar los commit al repositorio de Git-Hub 
+    -git push -u origin master (en realidad no siempre es "master" ahi va el nombre de la branch)
+-Para enviar los commit al repositorio de Git-Hub (ya estando conectada la branch)
+    -git push
+
+OTRAS ACCIONES
+-Para saber la version
+    git --version
+-Actualizar version de Git
+    git update-git-for-windows
+-Configurar nombre de usuario
+    git config --global user.name "Tadeo Falistoco"
+-Configurar email
+    git config --global user.email ttadeofalistoco@gmail.com
+-Verificar nombre
+    git config user.name
+-Verificar email
+    git config user.email
+-Limpiar la pantalla de la consola
+    clear
+-Para movernos entre especificidad de carpetas (mas especifico)
+    cd carpeta 
+-Tambien podemos arrastrar la carpeta que queremos abrir a la consola
+    cd (carpeta arrastrada)
+-Para movernos entre especificidad de carpetas (menos especifico)
+    cd ..
+-Para saber que carpetas/archivos se encuentran dentro del nivel que estoy (algunas pueden aparecer en un idioma distinto, ingles)
+    ls 
+-Luego de hacer cambios en alguno de los archivos que ya tenemos commiteados, podemos guardarlos con add o podemos descartar los cambios 
+    git restore (y luego se hace otro commit)
+-Para mostrar todas las branch que hay de nuestro proyecto
+    git branch
+-Para crear una branch nueva
+    git branch nombre-de-la-rama
+-Para cambiarnos de branch (ya con esto es que podemos trabajar varias versiones en paralelo)
+    git checkout
+-Para que la branch master tenga los cambios de alguna de las demas versiones (osea que otra version se convierta en la master)
+    git merge nombre-de-la-rama
+-Para borrar una branch 
+    git branch -d nombre-de-la-rama-que-queremos-borrar
+-Para ver listado de los commit
+    git log 
+-Para ver listado de los commit resumido (del ultimo al primero)
+    git log --oneline
+-Para moverme entre commits pasados (con esto no se recupera) (para ello conviene crear una branch nueva y traer el commit ahi)
+    git checkout codigo-del-commit
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+GIT-HUB
+
+PASOS DE LA CLASE:
+1- Creamos una carpeta, en este caso Clase_11
+2- Nos posicionamos en esa carpeta en Git Bash
+3- Inicializamos la carpeta con git init (creamos un repositorio)
+4- Hacemos git status para ver la lista de archivos dentro de la carpeta y en cual de los 3 estados de git estan
+5- Agregamos los archivos al repositorio con git add
+6- Hacemos un commit
+7- Creamos un archivo ".gitignore"
+8- Creamos un repositorio en Git-Hub (el nombre al igual que un archivo no puede tener espacios)
+9- Vimos los comandos que tenemos que realizar para poder trabajar en conjunto con git y git-hub
+10- Entendemos que para git-hub la branch master se llama branch main (por temas de maestro-esclavo)
+11- Ante esto podemos renombrar a la branch master como branch main o simplemente seguir trabajando con la branch master
+12- Vimos como obtener un url para que demas personas puedan ver nuestro sitio web
+13- Para esto vamos a git-hub, foto de perfil, luego a Settings, luego a Pages
+14- Alli en Build and Deployment ponemos, Source: deploy from a branch; y en Branch: la branch que queremos mostrar (en este caso la master)
+15- Esto al guardarlo y recargar la pagina nos brindará un url con el que podremos visitarla
+
+.GITIGNORE
+    -Creamos un archivo suelto a la altura de donde suele estar index.html
+    -Todo lo que escribimos en ese archivo no se va a mostrar en la terminal de Git Bash
+        -Osea que al hacer un commit estos archivos no se van a subir
+    -Para que esto sirva, estos archivos deben estar escritos exactamente igual a como aparecen en el git status
+    -Si ya hicimos un commit sobre un archivo, despues no podemos ignorarlo
+        -Para hacerlo deberiamos deshacer ese commit (creo)
+    -Este tambien se puede trabajar desde Git-Hub al crear el repositorio
+        -Pero tiene la desventaja de que solo podemos ignorar las opciones que nos dan ahí, y no lo que nosotros queramos
+
+
+COMANDOS PARA CONECTAR GIT A GIT-HUB 
+-Para conectar repositorio de Git con repositorio de Git-Hub
+    -git remote add origin link_del_repositorio_de_github
+-Para enviar los commit al repositorio de Git-Hub 
+    -git push -u origin nombre_de_la_branch

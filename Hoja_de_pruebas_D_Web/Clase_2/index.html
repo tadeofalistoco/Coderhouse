@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 02 - desarrollo web</title>
+</head>
+
+<!-- En el body va todo el contenido visible del sitio web, este se divide en: header, main y footer -->
+<body>
+    <!-- esto seria la linea de comentario -->
+
+    <!--header se utiliza para el banner principal de mis htmls-->
+    <header id="interno" >
+        <h1> Este es el encabezado!</h1>
+        <!-- etiqueta para el menu de navegación-->
+        <nav>
+            <ul>
+                <li>
+                    Home
+                </li>
+                <li>
+                    <!-- enlaces relativos-->
+                    <a href="pages/productos.html">Productos</a>
+                </li>
+                <li>
+                    Contacto
+                </li>    
+                <li>
+                    <!-- otro enlace relativo pero abriendo otra pestaña-->                    
+                    <a href="pages/ejemplo.html" target="_blank">Pagina con ejemplos de listas</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <main> se utiliza para cotener el contenido MAS importante de nuestros htmls-->
+    <main>
+        <!-- dentro del main (usualmente) se utiliza la etiqueta div para separar secciones, por un tema de organizacion, y para posterior aplicacion de CSS-->
+        <div> 
+            <h2> Esta es la primer seccion, contiene una foto </h2>
+            <!-- <p> etiqueta para colocar parrafos -->
+            <p> Este es un parrafo con la etiqueta "p" </p>
+            <!-- <img> etiqueta img para imagenes-->
+            <img src="img/foto airve.jpg" alt="la foto que salgo lindo">
+        </div>
+
+        <div> 
+            <h2> Esta es la segunda seccion, contiene el link a un video </h2>
+            <!-- <iframe> etiqueta para agregar videos, mapas o listas de reproduccion-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/upbjHe-hWGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <!-- así quedaría la etiqueta iframe solo con los atributos "src" y "frameborder" -->
+            <iframe src="" frameborder="0"></iframe>
+        </div>
+        
+        <div>
+            <h2> Esta es la tercer seccion, diferenciando etiquetas de bloque y etiquetas de linea</h2>
+            <h4> etiqueta de bloque</h4>
+            <h4> etiqueta de bloque</h4>
+        
+            <span> etiqueta de linea</span>
+            <span> etiqueta de linea</span>
+        </div>
+
+    </main>
+
+    <!--footer se utiliza para crear o para tener los derechos de autor-->
+    <footer>
+        <h2> Este es el footer, contiene los derechos de autor y las fuentes</h2>
+        <h3> H3 Todos los derechos reservados</h3>
+        <!-- enlace absoluto-->
+        <a href="https://www.coderhouse.com" target="_blank"> Ir a coderhouse</a>
+
+        <h3>Aca ponemos otro h3 ya que la etiqueta "a" es de linea, entonces si no lo hago este link estaría pegado a un costado del de arriba</h3>
+        <!-- enlace interno-->
+        <a href="#interno"> Esto te lleva al encabezado</a>
+
+    </footer>
+
+   
+</body>
+</html>

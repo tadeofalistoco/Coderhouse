@@ -1,0 +1,16 @@
+CICLOS E ITERACIONES
+
+-Estructuras de Bucles:
+    - for
+    - while
+    - do ... while
+
+-Tipos de Bucles
+    -De conteo: se repite x cantidad de veces, utiliza la estructura "for"
+    -Condicionales: se repite hasta que la condicion evaluada deje de ser verdadera, utiliza la estructura "while" y "do ... while"
+
+-En el for, la funcion principal de los elementos dentro de los parentesis, es simplemente de delimitar cuantas veces se va a repetir el bucle
+
+-while y do ... while funcionan igual solo que el primero analiza la condicion y luego cumple la instruccion, mientras que el segundo cumple primero la instruccion y luego analiza la condicion
+
+-Switch nos sirve para reemplazar el if en los bucles, de una manera mas sencilla y especifica

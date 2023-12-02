@@ -1,0 +1,19 @@
+CONTROL DE FLUJOS
+
+-En esta clase se ven: condicionales (if/else/else if), valores boolean (true/false) y operadores logicos (and/not/or)
+
+    -El condicional "else if" funciona igual que "elif" en python
+
+    -Los operadores logicos se escriben:
+        and= "&&"
+        or= "||"
+        not= "!"
+
+-Formas de poner como condicion que un valor esta vacio:
+    - if ( valor == "")
+    - if ( valor == null)
+
+Diferencia entre "==" y "===" - y entre "!=" y "!=="
+    -El doble igual significa que los valores son los mismos, sin importar si tienen el mismo type 
+    -El triple igual significa que los valores son los mismos y que ambos son del mismo type, osea, ambos son string, o ambos son number
+    -Para los "distinto" funciona igual, el primero es "distinto" y el segundo es "estrictamente distinto"

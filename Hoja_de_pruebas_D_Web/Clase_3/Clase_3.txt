@@ -1,0 +1,98 @@
+Clase 3 - Incluyendo CSS a nuetro proyecto
+
+Veremos algunos estilos básicos de CSS 
+
+Para agregar estilos usamos la etiqueta <style></style>
+
+SINTAXIS EN HTML
+
+etiqueta{
+    atributo: valor;
+}
+
+
+SINTAXIS EN CSS
+Teoria:
+
+selector{
+    propiedad: valor;
+}
+
+Ejemplo:
+
+h1{
+    color: red;
+}
+
+-Entonces, se abren con llaves {} , la propiedad y el valor van en conjunto y se cierra cada propiedad con un punto y coma (;)
+
+DENTRO DE HTML: (ver ejemplos en index.html)
+Existen 3 maneras de incluir estilos a nuestros proyectos, las 3 se manejan con un juego de pares que le agregan propiedades a una etiqueta (selector)
+
+Hay dos que no son recomendadas para un sitio web (en linea, desde el head)
+Y hay uno que es el mas recomendado para sitios web ()
+
+1º Estilos en linea (no sirve para sitios web, pero si para maqueteado de mails)
+Desventajas
+    -Es desprolijo
+    -Es ilegible
+    -Es tedioso trabajar el código de esta manera
+    -Hay que repetir mucho código ya que no son estilos globales
+-Pero para los mails esta bueno porque es la unica manera de que el mail soporte el código
+
+2º Estilos desde el head
+-Primero se crea una etiqueta en el body, y luego se le aplica un estilo desde el head, la cual modifica a todas las etiquetas del mismo tipo
+Desventajas
+    -No globaliza a otros html de un mismo proyecto
+    -No es muy prolijo
+    -No es específico, si queres cambiar una sola etiqueta (ej: h2), tenes que cambiar todos los h2
+
+3º Estilos con carpeta aparte de CSS (ver ejemplos en styles.css y en index.html)
+-Creamos la carpeta, y dentro creamos un archivo .css 
+    -Se puede llamar: estilos, style, styles, main, o como mas nos guste (pero se recomienda usar uno de esos nombres)
+-Se crea un unico archivo.css para todo el proyecto (a menos que sea muy enorme)
+-Primero tenemos que linkear el archivo.css al head del archivo.html
+-El link a nuetro archivo.css debe estar en el head de todos mis archivos.html
+
+Para este 3º metodo vamos a entrar en puro CSS
+
+CSS
+
+-Para haceer comentarios hacemos: /* comentario */
+
+SINTAXIS DE CSS
+Teoria:
+
+selector{
+    propiedad: valor;
+}
+
+Ejemplo:
+
+h1{
+    color: red;
+}
+
+
+-Para aplicar estilos individuales, ej: que un estilo no se aplique a TODOS los h3, sino que solo a uno en específico
+    Utilizamos los selectores "class" o "id"
+
+-Las class se pueden utilizar para mas de una etiqueta
+-Los id solo se pueden utilizar en una en especial (en css no se usa tanto, se usa mas en javascript)
+
+-Los class y los id tienen prioridad jerarquica con el resto de los estilos
+    -Si el programa debe decidir entre aplicar un estilo general, o uno de una class, va a aplicar el de la class
+
+-Tambien se le puede agregar un "!important" al final del valor para que ese estilo prevalezca ante todos los demas
+    -De igual manera si tenes que acudir a esta forma es porque algo estas haciendo mal
+
+Tambien podemos usar el estilo tipo * , que se aplica a todo el html
+
+JERARQUIA DE APLICACION DE ESTILOS
+(Del mas poderoso al mas pichi)
+!Important > Estilos en linea > Id > Class > Estilo aplicado a etiqueta
+
+-Además los estilos se aplican en orden de arriba a abajo (el de mas abajo contradice a los de arriba)
+
+Despues vimos ruta de especificidad
+    -Para aplicar un estilo a una etiqueta hija en particular, primero se debe llamar a la etiqueta padre + los eslabones necesarios

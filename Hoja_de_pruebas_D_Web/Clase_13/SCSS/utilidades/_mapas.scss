@@ -1,0 +1,17 @@
+/* Mapas */
+
+$boton-standard: (
+    /* Aqui dentro inventamos variables con sus respectivos valores */
+    bg-standard: rgb(3, 177, 3),
+    color-standard: black,
+    width-standard: 150px,
+    border-standard: 1px solid black,
+);
+
+$boton-premium: (
+    /* Aqui dentro inventamos variables con sus respectivos valores */
+    bg-premium: rgb(6, 134, 253),
+    color-premium: rgb(255, 255, 255),
+    width-premium: 150px,
+    border-premium: 1px solid rgb(70, 70, 70),
+); 

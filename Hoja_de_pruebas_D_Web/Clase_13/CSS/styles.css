@@ -1,0 +1,52 @@
+/* Listas */
+/* Mapas */
+/* Bucles */
+.button-small {
+  font-size: 20px;
+  padding: 10px; }
+
+.button-medium {
+  font-size: 30px;
+  padding: 15px; }
+
+.button-large {
+  font-size: 40px;
+  padding: 20px; }
+
+main .div-extend {
+  margin: 1rem;
+  padding: 2rem;
+  background-color: tomato; }
+
+/* Estilos header */
+header h1 {
+  background-color: #ff7300; }
+
+/* Estilos main */
+main .mi-boton-standard {
+  background-color: #03b103; }
+
+main .mi-boton-premium {
+  background-color: #0686fd; }
+
+main .div-condicional-1 {
+  background-color: orange;
+  border: 3px solid black;
+  background-color: pink; }
+
+main .div-condicional-2 {
+  background-color: red;
+  border: 2px solid yellow;
+  background-color: tomato; }
+
+/* Estilos de footer */
+footer {
+  width: 200px;
+  height: 400px;
+  color: white;
+  background-color: tomato; }
+  footer div {
+    width: 100px;
+    height: 200px;
+    color: black;
+    background-color: tomato; }

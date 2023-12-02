@@ -1,0 +1,110 @@
+Frameworks CSS + Bootstrap
+
+INTRODUCCION DE BOOTSTRAP
+-Bootstrap es uno de los muchos frameworks que existen, osea es como un conjunto de librerias de CSS y Javascript
+-Asi como en Python, importabamos funciones de el framework Django, aca importamos las class, de las cuales hay distintos tipos
+-De todas formas, al utilizar Bootstrap no estamos obligados a limitarnos a usar solo sus clases, sino que este se complementa a las clases de nuestro CSS
+-Hay que tener en cuenta que este, al igual que muchos frameworks, se basa en copiar y pegar
+    -Por lo tanto para sacarle un mayor provecho habria que estudiarselo, con sus diferentes librerias y class, para entender mejor el desarrollo de las clases del curso
+-Bootstrap se trabaja desde el html al "crear" una class para una etiqueta
+    -Que en realidad no es crear una class, sino que es aplicar una preexistente en bootstrap
+    -Por lo tanto al aplicar estilos de bootstrap no estaremos utilizando nuestro archivo.css
+
+
+VENTAJAS
+-Acorta el codigo css
+-Es muy facil crear una pagina web con bootstrap
+
+DESVENTAJAS
+-Es desprolijo
+-No son estilos globales, solo se le aplican a 1 html a la vez
+-Mucho codigo html
+-Hay que estudiar un monton para conocer todas las combinaciones de clases de bootstrap
+
+
+DESCARGAR BOOTSTRAP
+-Hay distintas maneras de utilizarlo
+    -Podemos descargarlo como paquete, como hicimos con Django
+        -Esta es medio al pedo si el proyecto es muy chico ya que solo lo descargariamos para usar un 1% del framework
+    -Copiando y pegando el link CDN de la pagina de bootstrap
+        -Copiamos el link que aparece en la pagina
+            -Aparece el de CSS: <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+            -Aparece el de Javascript: <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        -El link de css lo pegamos en el head de nuestro HTML
+        -El script de Javascript lo pegamos justo antes del cierre del body
+
+
+SISTEMA DE GRILLAS
+    -La disposicion del layout se maneja con sistemas de grillas de hasta 12 columnas
+    -En nuestro index.html esta el ejemplo de como funciona
+    -Pero aca hay una explicacion:
+        -Para el sistema de grillas se utilizan las siguientes clases
+            -container y container-fluid: 
+                -se ponen en la etiqueta padre 
+                -la primera hace que el contenido tenga margenes a los costados de la pantalla
+                -la segunda hace que el contenido ocupe el 100% del ancho de la pantalla
+                
+            -row: 
+                -se pone en la etiqueta hija
+                -dependiendo cuantas etiquetas hijas hayan, cuantas filas habran en la grilla 
+
+            -col-N: 
+                -se pone en la etiqueta nieta
+                -dependiendo el numero puesto en N, se definira cuantas de esas 12 columnas ocupara esa etiqueta en el renglon de la etiqueta hija
+
+            -col-sm-N:
+                -funciona igual que col-N pero aclaramos la media querie antes del N
+
+    -Este ya es un diseño responsive, osea que se adapta a los distintos tamaños de pantalla
+    -Las grillas de bootstrap manejan sus propios breakpoints:
+        None: <576px (extra small)
+        sm:  >=576px (small)
+        md:  >=768px (medium)
+        lg:  >=992px (large)
+        xl:  >=1200px (extra large)
+        xxl: >=1400px (extra extra large)
+
+
+COMPONENTES DE BOOTSTRAP
+-Que nos ofrece este framework
+-Sus clases nos sirven para aplicar estilos predeterminados en distintos formatos
+    -Tipografias
+    -Tablas
+    -Formularios
+    -Imagenes
+    -Botones
+    -Dropdowns para menus desplegables
+    -Barras del navegador
+    -Paginacion
+
+
+Algunas clases de Bootstrap:
+    -text-center: centra el texto en el eje horizontal
+    -bg-danger: da un BackGround-color color rojo
+    -p-N: El numero que pongamos en N es el numero del padding
+    -m-N: El numero que pongamos en N es el numero del margin
+
+
+UTILIZAR CSS EN CONJUNTO CON BOOTSTRAP
+-Nosotros no debemos sobreescribir el codigo css de bootstrap
+-Si queremos aplicar estilos propios, creamos una clase a parte
+-En todo caso lo que hacemos es aplicar, a una misma etiqueta, clases de bootstrap y clases propias
+-Cuando creamos nuestas clases debemos respetar la nomenclatura de bootstrap
+    -La cual es kebab-case 
+
+
+CONJUNTOS DE ESTILOS PREDETERMINADOS 
+-Asi como en Django teniamos la posibilidad de importar el codigo entero de un log-in, aca podemos utilizar codigo de paquetes de estilos
+    -Por ejemplo para un menu de navegacion bien fachero y con codigo avanzado
+-Para hacer uso de estos paquetes debemos ir a la pagina de Bootstrap
+    -Dentro de esta vamos a la seccion "Docs" 
+    -Y alli se despliega una bandeja de rubros de facilidades
+        -En el ejemplo del menu de navegacion, este se encuentra en la parte de "Components/Navbar"
+        -El primero de esta lista es el que copiamos en el index.html
+
+
+PARA EL PROYECTO 
+-Debemos elegir una opcion:
+    -OPCION 1: 1 de los 5 html debe estar hecho 100% con bootstrap
+    -OPCION 2: Cada uno de los 5 html debe tener algun componente de bootstrap 
+                    -Sugerencias para esta: Card, Carrusel, Navbar

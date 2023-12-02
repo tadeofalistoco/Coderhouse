@@ -1,0 +1,64 @@
+SERVIDORES: TU SITIO EN LINEA
+
+Pasos de la clase:
+-Primero descargamos FileZilla (la version de cliente)
+    -Sirve para poder trabajar de manera local en nuestras computadoras conectandonos a los servidores que esta aplicacion nos provee
+
+
+SERVIDORES
+-Son ordenadores que ponen recursos a disposicion nuestra
+-Existen dos tipos: de Hardware y de Software
+    -Se podria decir que Hardware es la parte fisica y Software es el programa/cerebro de las computadoras
+
+-El certificado SSL es un certificado de seguridad
+    -Si la url empieza con https tiene certificado
+    -Si la url empieza con http no tiene certificado 
+
+DOMINIO
+-Es el nombre/direccion de nuestra web: www.google.com.ar
+    - www. = subdominio
+    - google = dominio 
+    - .com = nivel superior generico 
+    - .ar = nivel superior geografico
+
+-Como registrar dominios:
+    -Servidores/clientes que nos permiten registrar un dominio, ademas de ofrecernos su servidor
+        -Hostinger
+        -DonWeb
+        -GoDaddy
+        -Nic.ar (especifica para argentina) (requerimento: tener clave fiscal 3 de AFIP)
+        -Neolo (se supone que tiene codigo de descuento para coder)
+        -000webhost (gratis)
+
+-El servidor y el dominio los debe pagar el cliente, no el desarrollador
+
+WEB HOSTING 
+-Es el servicio que nos permite dejar alojada nuestra web en un servidor
+
+DIFERENCIA ENTRE DOMINIO Y HOSTING
+-El dominio vendria a ser como comprar un terreno vacio, y el hosting es pagar para poder construir dentro de ese terreno, y hacer uso de lo que se construya allí
+
+CREAR UN SITIO WEB EN 000webhost:
+-Iniciamos sesion
+-Clickeamos en crear un sitio web
+-Llenamos los datos (el nombre del dominio igual que los archivos: sin espacios)
+
+-Como subir archivos:
+    -Ya creamos el sitio web
+    -Clickeamos en "administrar" donde esta nuestro sitio web
+    -Luego vamos a "Herramientas" y luego "administrador de archivos" donde se nos va a abrir una pestaña nueva con un panel de control/cpanel 
+    -Aca tenemos dos carpetas: tmp y public_html
+    -Dentro de public_html nos va a aparecer un archivo llamado htaccess
+    -Ahora para subir los archivos tenemos que seleccionarlos y arrastrarlos dentro de public_html
+    -SOLO debemos subir el index.html y las carpetas (pages, img, CSS) pero SASS NO
+    -Para actualizar cambios en la pagina debemos volver a subir estos mismos archivos
+
+FILEZILLA 
+-FileZilla me conecta con el host donde vamos a alojar nuestro proyecto
+-Para esto nos va a pedir los siguientes datos: servidor/nombre de host; nombre de usuario; contraseña; puerto
+-Para encontrar estos datos vamos denuevo a "administrar" en sitios web
+-Ahi en el manu de la izquierda vamos a clickear en "Website Settings", y luego en "General"
+-Los datos que nosotros necesitamos estan donde dice "Detalles FTP"
+-Luego de llenar los datos clickeamos en "Conexion rapida"
+-Una vez conectado, ya subir archivos funciona igual que en 000webhost
+-Este programa nos sirve para trabajar de manera mas global, en caso de que tengamos varios clientes

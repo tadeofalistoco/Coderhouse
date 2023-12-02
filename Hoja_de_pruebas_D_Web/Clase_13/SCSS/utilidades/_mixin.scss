@@ -1,0 +1,19 @@
+// Mixin
+
+// Mixin con parametros
+// Al igual que cuando creamos funciones en python, los parametros son lo que se pone entre parentesis
+@mixin estilos-base($width, $height, $color){
+    width: $width;
+    height: $height;
+    color: $color;
+    background-color: tomato;
+}
+
+// Mixin sin parametros
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+}

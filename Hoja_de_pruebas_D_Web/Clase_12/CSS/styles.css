@@ -1,0 +1,15 @@
+/* Si hago un comentario de CSS, este si se muestra en ambos archivos */
+/* Utilidades de SASS */
+/* Nesting */
+header {
+  background-color: aqua; }
+  header h1 {
+    /* $variables */
+    background-color: #F7B05B;
+    /* Calculos */
+    width: 600px; }
+
+/* @Import */
+/* estilos de html nosotros */
+.header-nosotros {
+  background-color: black; }

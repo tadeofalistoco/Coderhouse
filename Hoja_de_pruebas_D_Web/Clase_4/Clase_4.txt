@@ -1,0 +1,26 @@
+CSS + Box model
+
+-Para poder trabajar con css, y darle a nuestra pagina la forma que nosotros queramos, debemos resetear los estilos predeterminados con los que ya viene el navegador
+
+La propiedad overflow tiene cuatro valores: visible, hidden, scroll y auto
+
+Para posicionar imagenes tenemos 5 posiciones
+    -static (valor por defecto): no se mueve sin importar que
+    -relative: las demas etiquetas quedan donde estan, y esta se mueve segun etiquetas de posición
+        -top
+        -right
+        -left
+        -bottom
+    -absolute: suele usarse cuando el padre es relative
+        -Con esto se posiciona donde le indicamos, en relacion a la totalidad de la pantalla del navegador
+        -Pero cuando el padre es relative, es en relacion a la totalidad de la etiqueta padre
+        -A diferencia del relative, esta no deja un espacio en blanco en donde se supone que deberia estar
+    -fixed: queda fijo y acompaña el scroll
+    -sticky: es igual a fixed, pero tiene un lugar de descanso, cuando llega a este se estaciona, y deja de acompañar al scroll 
+        -como el menu de algunos navegadores
+
+Cuando dos elementos a los que se le dan posiciones se superponen se usa la propiedad z-index en el CSS
+    -Este recibe valores numericos 
+    -Todos los efectos tienen por defecto valor 1
+    -Se superponen del mas alto al mas bajo
+    -Cuando son iguales se superpone el que esta mas al final del html

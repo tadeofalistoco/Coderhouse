@@ -1,0 +1,60 @@
+GRIDS
+
+Layout se le llama a la disposicion de las etiquetas (cajas)
+
+Diferencias con Flexbox
+    -Este permite definir filas y columnas, a diferencia de Flexbox que solo podía una a la vez
+        -Por lo tanto se maquetea en grillas
+        -Es un sistema de maquetacion bidireccional
+    -Flexbox es muy ordenadito, con Grid podemos poner lo que queremos como mas nos guste
+    -Grid nos sirve para poner estructuras a los lados de la pagina, como el indice de wikipedia o la publicidad de las paginas por ejemplo
+    -Estos pueden convivir entre si
+
+Grid:
+    -Primero se utiliza, sobre la etiqueta/clase padre, la propiedad display: grid o tambien display: inline-grid
+        -display: grid decide si la grilla aparece por arriba o por debajo del contenido exterior
+        -display: inline-grid decide si la grilla aparece por izquierda o por derecha del contenido exterior
+
+Otras propiedades del contenedor: (ademas de display: grid y display: inline-grid)
+    -grid-template-columns: cuantas columnas hay y cuanto ocupa cada una
+    -grid-template-rows: mismo concepto que en columnas
+    -grid-template-areas: cada comilla/ renglon representa una fila, pero cada palabra representa una columna
+        -Importante agregar tabulacion si tocamos la tecla enter
+        -Todas las filas tienen que tener la misma cantidad de palabras
+        -Las palabras son palabras clave que deben ser representativas de lo que estan referenciando
+        -Trabaja en conjunto con la propiedad grid-area
+    -column-gap
+    -row-gap
+
+Propiedades para el posicionamiento de los hijos, desde el padre
+    -justify-items (en grid, eje horizontal)
+    -align-items (en grid, eje vertical)
+    -justify-content
+    -align-content
+
+Propiedades de los items hijos
+    -justify-self
+    -align-self
+    -grid-area: Trabaja en conjunto con grid-template-areas, se pone en cada etiqueta hija que queramos referenciar en grid-template-areas
+
+Al usar grid utilizamos unidades de medida relativas, esto favorece a que sea responsive
+    -Se pueden usar porcentajes del ancho/alto del navegador (grid-template-columns: 30%)
+        -Cuando hacemos esto hay que tener en cuenta el espacio que esta usando el gap
+        -Para usarlo con las rows primero hay que darle una altura al contenedor
+            -Tambien es mejor usar px para las rows
+    -Tambien se pueden usar fracciones (solo en grid)
+        -Para esto se usa fr (fraction) como unidad de medida 
+            -Se le pueden aplicar numeros decimales
+        -Esta se combina mejor con el gap (si este se pone en px)
+
+Otra manera de distribuir el espacio es con la propiedad repeat: (en el primer espacio va la cantidad de columnas/filas, en el segundo el espacio que van a ocupar)
+    grid-template-columns: repeat(4, 1fr) 
+    -Sirve para darle el mismo tamaño a todas sin tener que escribir mil veces lo mismo
+
+Otra mas es con vh: que es el porcentaje de la pantalla del navegador con la que se este viendo el sitio web
+
+Grid inicialmente lo vamos a utilizar para las etiquetas contenedoras mas grandes (header, main, section, footer) y para las hijas utilizaremos Flexbox
+
+Hay dos corrientes respecto a los estilos aplicados al body:
+    -Algunos le aplican estilos y alineaciones etc
+    -Otros prefieren meter todo el body en un div pero no tocar el body en si (normalmente vamos a usar esta)

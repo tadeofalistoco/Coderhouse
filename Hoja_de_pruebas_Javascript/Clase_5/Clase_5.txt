@@ -1,0 +1,22 @@
+OBJETOS
+
+-Los objetos en Javascript son lo mismo que los diccionarios en Python
+    -Osea que el objeto "mi_objeto" esta compuesto por varios pares de "propiedad : 'valor',"
+    -Estos pares se ponen tal cual, entre llaves
+
+-Al hacer un console.log estos pares apareceran en orden alfabetico
+
+CONSTRUCTORES
+-Funcion constructora
+-Es una funcion como cualquier otra pero el nombre de estas comienza con mayuscula
+    -Creamos una funcion con parametros
+    -Utilizamos la palabra reservada "this."
+
+CLASES
+-Es muy parecido a la forma que utiliza la funcion constructora
+-Pero dentro de esta ademas podemos meter acciones creando funciones 
+-Entre estas funciones es que creamos la funcion constructora pero esta vez con la palabra reservada constructor 
+
+METODOS
+-Aca es donde creamos las acciones que mencionabamos en las clases
+-Simplemente agregamos otro "this." y en ese creamos una funcion que ejecute cierta accion 

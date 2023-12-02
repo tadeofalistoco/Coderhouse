@@ -1,0 +1,105 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* Estilos del contenedor (padre) */
+.contenedor{
+    background-color: tomato;
+    /* Propiedades de grid */
+    display: grid;
+    /* Propiedad columnas */
+    /* Cuando se ponen mas columnas que divs, las columnas extras se generan vacias */
+    /* grid-template-columns: 200px 100px; */ /* El numero de columnas dependera de cuantas ponga (se pueden usar px al igual que otras unidades de medida) */
+    grid-template-columns: repeat(3, 1fr);
+    /* Propiedad filas */
+    grid-template-rows: 200px 200px; /* Mismo concepto que para las columnas, pero predomina primero el numero de las que esten primero */
+    /* A esto le podemos agregar gap, para generar espacios entre los hijos */
+    gap: 10px;
+    padding: 10px;
+
+}
+
+/* Estilos del contenido (hijo) */
+.hijos{
+    background-color: rgb(115, 250, 239);
+}
+
+/* Estilos de Ejemplo 2 */
+.ejemplo{
+    background-color: rgb(189, 255, 233);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    /* Alinear contenido de la grilla */
+    justify-items: center; /* Eje horizontal */
+    align-items: center; /* Nuevamente como todo lo que se mueve por el eje vertical, requiere que el contenedor tenga un espacio determinado */
+    height: 400px;
+}
+
+/* Vamos a hacer que la clase "cuatro" tenga una alineacion distinta a los demas, en este caso desde el hijo */
+.cuatro{
+    justify-self: end; /* Esto se puede hacer gracias a que el padre tiene grid instalado */
+
+}
+
+
+/* Estilos de ejemplo-dos.html */
+.container{
+    height: 100vh; /* Otra manera de delimitar el espacio, con el porcentaje de la pantalla del navegador en el momento que se este viendo*/
+    /* Para usarla tenemos que borrar el grid-template-rows */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    /* Estructuramos por areas */
+    grid-template-areas: 
+        "header header"
+        "main section-1"
+        "section-2 section-1"
+        "footer footer";
+
+    gap: 10px;
+    padding: 10px;
+}
+
+/* En los siguientes ejemplos se puede ver que en las etiquetas hijas vamos a usar flex en vez de grid (por ejemplo las listas) */
+header{
+    background-color: tomato;
+    grid-area: header;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+}
+
+header nav ul li{
+    background-color: rgb(247, 164, 97);
+    padding: 10px;
+}
+
+main{
+    background-color: bisque;
+    grid-area: main;
+}
+
+.section-1{
+    background-color: cadetblue;
+    grid-area: section-1;
+}
+
+.section-2{
+    background-color: rgb(138, 173, 78);
+    grid-area: section-2;
+}
+
+footer{
+    background-color: rgb(248, 107, 182);
+    grid-area: footer;
+}

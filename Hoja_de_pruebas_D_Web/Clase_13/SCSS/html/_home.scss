@@ -1,0 +1,50 @@
+@import "../utilidades/variables";
+@import "../utilidades/listas";
+@import "../utilidades/mapas";
+@import "../utilidades/bucles";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+@import "../utilidades/condicionales";
+
+/* Estilos header */
+header{
+    h1{
+        //utilizamos una lista
+        background-color: nth($paleta-colores, 2);
+    }
+}
+
+
+/* Estilos main */
+main{
+    //utilizamos un mapa
+    .mi-boton-standard{
+        background-color: map-get($boton-standard, bg-standard );
+    }
+    .mi-boton-premium{
+        background-color: map-get($boton-premium, bg-premium );
+    }
+    //utilizamos extend
+    .div-extend{
+        @extend %estilos;
+    }
+    //utilizamos condicional
+    .div-condicional-1{
+        //se cumple la condicion
+        @include condicional(orange)
+    }
+    .div-condicional-2{
+        //no se cumple la condicion
+        @include condicional(red)
+    }
+
+}
+
+/* Estilos de footer */
+footer{
+    //utilizamos un mixin
+    @include estilos-base(200px, 400px, white);
+    div{
+        @include estilos-base(100px, 200px, black);
+    }
+}

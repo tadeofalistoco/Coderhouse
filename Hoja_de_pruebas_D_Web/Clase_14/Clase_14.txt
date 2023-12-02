@@ -1,0 +1,68 @@
+GRADIENTES, TRANFORMACIONES Y ANIMACIONES
+
+-Primero copiamos todo lo de la clase 7 en esta carpeta de la clase 14
+
+GRADIENTES
+-Existen dos tipos
+    -Gradientes lineales (linear-gradient)
+        -El degrade es lineal, va de un punto a otro, y nosotros le indicamos la direccion, y entre que colores sera el degrade
+            background-image: linear-gradient(to left, red, yellow)
+        -La direccion por defecto es de arriba hacia abajo
+
+    -Gradientes radiales (radial-gradient)
+        -Es un circulo con un degrade de afuera hacia adentro
+        -No se usa tanto
+
+
+TRANFORMACIONES
+-Se utiliza la propiedad transform para: mover, rotar, girar elementos
+
+    TRANSLATE
+        -Sirve para correr sobre el eje x e y
+        -Para correr solo sobre el eje x: transform:translateX()
+            -El predeterminado corre a la derecha, si ponemos un signo (-) corre a la izquierda
+        -Para correr solo sobre el eje y: transform:translateY()
+        -Se utilizan px, rem, etc
+            transform: translate(x, y)
+
+    ROTATE
+        -Sirve para rotar los elementos sobre su eje
+        -Con grados positivos rota a la derecha y con valores negativos rota a la izquierda
+        -Utilizamos "deg" como unidad de medida, que significa grados
+            transform: rotate(90deg)
+
+    SCALE
+        -Sirve para cambiar la escala de un elemento, osea el efecto es como hacer zoom o como hacer zoom out
+        -Se escriben dos numeros separados por una coma, el primero hace referencia al width y el segundo al height
+        -Si se escribe uno este se usa para ambos
+        -El tamaño base es 1
+        -Numeros entre 0 y 1 lo alejan
+        -Numeros mayores a 1 lo acercan
+        -Numeros negativos funcionan igual pero dandolo vuelta
+            transform: scale()
+
+    SKEW
+        -Sirve para sesgar/deformar/torcer elementos
+        -Utiliza grados (deg)
+            transform: skew(10deg, 20deg)
+
+
+
+TRANSITION ( transition: 4s; )
+-Se utiliza con segundos (2s)
+-Junto con la el hover, hace que se muestre la transicion entre el cambio que se esta efectuando
+-Para que la transicion sea tambien al quitar el cursor de la etiqueta, hay que poner el transition tambien en los estilos de la etiquetta sin hover
+-Existen diferentes velocidades con las que se haya la transition:
+    - ease-in-out
+    - linear
+    - ease-in 
+    - ease-out 
+    - cubic-bezier
+
+ANIMACIONES 
+-A diferencia de las transiciones o transformaciones, estas ocurren sin que el usuario haga nada
+-En vez de necesitar de un hover, estas funcionan en bucle, desde el momento que el usuario entra a la pagina
+-Para esto necesitamos un keyframe y un elemento al cual aplicar la animacion 
+    -Primero le damos todos los atributos al elemento con la propiedad animation
+        -Nombre, duracion, repeticion, etc
+    -Y luego con "@keyframes nombre-del-elemento", indicamos que ocurrirá en el bucle de la animacion

@@ -1,0 +1,48 @@
+Pseudoclases y BEM
+
+NOMENCLATURAS
+-Existen 3 formas de nomenclar cuando hay 2 palabras para un mismo nombre:
+    -camelCase
+    -kebab-case
+    -BEM: padre__hijo--característica
+
+
+BEM (Block Element Modifier)
+-Es una forma especifica de nomenclatura de nuestras clases
+    -Teniendo en cuenta si esta hace referencia a un:
+        -bloque (contenedor)
+        -elemento (li, button, a, etc)
+        -modificador (un elemento con un estilo que lo distingue)
+    -Se utiliza de la siguiente manera
+        - bloque__elemento--modificador
+-Y los cuales se distinguen mediante la utilizacion de guion bajo y guion medio en su nomenclatura
+-Ventajas:
+    -Esto genera nombres mas claros, y sirve a la hora de compartir el mismo codigo con varias personas
+    -Es bastante prolijo, y desde el nombre de la class ya podemos saber a que etiqueta contenedora hace referencia, es como si tuviera su ruta
+    -Tambien permite la reutilizacion, es mas comodo copiar y pegar
+-Desventajas:
+    -Sus nombre son muy largos
+    -Utilizar este metodo puede ser muy tedioso
+
+
+PSEUDOCLASES 
+-Son palabras claves que en CSS se le añaden a los selectores (class, id, etiqueta, etc) en cierta forma de condicional
+-Estos analizan el estado de el selector, y si cumple con cierta condicion se le aplican los estilos
+-El formato sería el siguiente
+    selector:pseudoclase{
+        propiedad: valor;
+    }
+-Estas tambien se pueden superponer, osea que se pueden usar mas de dos pseudoclases en un mismo selector
+
+-Hay distintos tipos:
+    -visited: CREO que actua si un link ya fue visitado
+    -link: actua si un href aun no fue visitado
+    -checked: se utiliza en formularios para describir el estado de su contenido
+    -hover: actua solo cuando el raton está por encima del elemento
+    -active: actua cuando se clickea sobre el elemento
+
+-Otro tipo de pseudoclases:
+    -padre:not(class): hace que los estilos se le apliquen a las demas clases contenidas por el padre excepto a la que esta entre parentesis
+    -nth-child(numero/odd/even): aplica estilos a un hijo teniendo en cuenta su posicion respecto al padre, o si la posicion es un numero par o impar
+    -first-child: aplica estilos al primer hijo
+    -last-child: aplica estilos al ultimo hijo

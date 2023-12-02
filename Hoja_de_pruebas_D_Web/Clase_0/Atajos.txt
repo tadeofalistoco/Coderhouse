@@ -1,0 +1,15 @@
+ATAJOS DE TECLADO
+
+Con Alt z podemos hacer Word Wrap (que el codigo se escriba en renglones)
+Con Ctrl a seleccionamos todo el código
+Con Alt Click escribimos en mas de un lugar a la vez
+
+
+HTML
+Escribiendo div.pepe se crea un div con una clase llamada pepe (de la misma manera funcionan las demas etiquetas)
+Escribiendo div*4 se crean 4 div
+    Y si a este le ponemos {} al final, los 4 divs van a tener el contenido de las llaves
+
+CSS
+Con * aplicamos propiedades a todo el html
+Poniendo "m0" y "p0" ya ses aplican las propiedades margin:0 y padding:0

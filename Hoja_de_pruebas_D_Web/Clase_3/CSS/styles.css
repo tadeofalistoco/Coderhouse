@@ -1,0 +1,57 @@
+/* Los siguientes son estilos con CSS */
+
+/* El siguiente hace que, todos los h3, del archivo.html linkeado, sean de color verde*/
+h3{
+    color: green;
+}
+
+/* Ahora vamos a llamar a una class, para hacerlo ponemos el nombre donde iria el selector, con un "." al comienzo */
+.ejemplo_class{
+    color: purple;
+}
+
+/* Ahora lo mismo con id, pero con un "#" en vez de un "." al comienzo */
+#ejemplo_id{
+    color:orange;
+}
+
+/* Asi es como se usa el !important , esta etiqueta ya tiene un estilo en línea, por lo tanto, siguiendo las jerarquias, debería prevalecer, aun habiendo un estilo aplicandole color verde a la etiqueta. Pero como pusimos el !important ahora la etiqueta se va a ver color marron */
+h4{
+    color: green;
+}
+
+h4{
+    color: brown !important; /*prevalece*/
+}
+
+
+
+
+/* Estilos de ejemplo3.html (que de igual manera se van a aplicar a todo archivo.html linkeado a este css*/
+
+/* Respecto a la ruta de especificidad */
+/* Nosotros podemos darle estilos por ejemplo: a los h2, pero solo los que esten dentro del footer */
+footer h2{
+    background-color: aqua;
+}
+
+/* De la misma manera se puede ir mas especifico, agregando etiquetas (padre: header, hija: nav, nieta: ul*/
+header nav ul{
+    background-color: cyan;
+    list-style: none; /* Esta propiedad le saca los punts de items a las listas desordenadas */
+}
+
+/* Para cambiar el color de fondo utilizamos la propiedad backround-color, en este caso se la vamos a aplicar a todo el/los header */
+header{
+    background-color: coral;
+}
+
+/* Aca hay algunas propiedades básicas */
+.propiedades_foto{
+    text-align: center; /* Cambia el centrado del texto */
+    text-transform: uppercase; /* Pone mayusculas */
+    text-decoration: underline; /* subraya el texto */
+    font-size: 20px; /* Cambia el tamaño del texto basandose en pixeles (el predeterminado son 16px) */
+    font-family: 'Times New Roman', Times, serif; /* Cambia la tipografía */
+    font-weight: bold; /* Aplica negrita */
+}

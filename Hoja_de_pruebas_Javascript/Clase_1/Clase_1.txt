@@ -1,0 +1,40 @@
+Conceptos generales: Sintaxis y variables
+
+-El codigo JS se puede escribir de dos maneras:
+    -Linkeando el script de JS a nuestro archivo.html
+        - <script src="js/main.js"></script>
+
+    -Utilizando la etiqueta script
+        - <script> codigo JS </script>
+
+-Los comentarios son los mismos que en CSS y SASS
+
+-Hay variables pre-existentes de JS
+    -Entre ellas var y let sirven para declarar variables (funcionan igual pero let es mas moderna)
+        -Ej: var nombre = "Tadeo";
+    - const que funciona igual a var y let, pero a esta no se le puede actualizar su valor, mientras que en las otras si 
+    - typeof nombre-de-variable
+        -Sirve para saber si es un numero, string, etc)
+    - alert("string" + variable)
+        -Esta muestra un cartel emergente en la pagina con el mensaje puesto entre parentesis
+    - confirm("string")
+        -Es como alert pero aca te da la opcion de aceptar o cancelar, en alert solo podes aceptar
+    - prompt("string")
+        -Funciona igual que input, y se puede meter dentro de una variable, dado que la variable muestre el resultado del prompt
+    - parseInt()
+        -Convierte lo que esta dentro de los parentesis a un numero entero (si escribimos una palabra, saldrá como resultado NaN)
+    - parseFloar()
+        -Convierte lo que esta dentro de los parentesis a un numero decimal
+    - document.write()
+        -Creo que sirve para escribir sobre el html
+
+-Tipos de valores:
+    -Number
+    -String
+
+-En el codigo el ";" es optativo, 
+
+-Se pueden hacer operaciones matematicas con numbers, strings, etc
+    -En JS no se pueden multiplicar strings
+
+-En los sintax error, NaN significa "Not a number" y aparece en caso de querer hacer una operacion matematica con un valor que no es un numero

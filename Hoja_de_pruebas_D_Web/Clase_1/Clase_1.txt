@@ -1,0 +1,118 @@
+CLASE 1 DESARROLLO WEB CODERHOUSE
+
+Repasamos diferencia entre Actividades, Workbooks, las Pre-entregas, y el Proyecto final
+                                            \_ (en este curso tambien se hacen en clase pero no se entregan)
+
+Proyecto final: 
+Desarrollar una pagina web
+-Tendremos 10 dias desde que finaliza el curso para subirlo
+-Debe estar adaptada para computadora, celular y tablet
+-Una idea es hacer nuestro portafolio personal o la pagina de un proyecto personal
+
+CLASE 1: PROTOTIPADO Y CONCEPTOS BASICOS DE HTML
+
+Que son las etiquetas
+Existen las semanticas y otras mas
+
+Como armar una pagina web?
+Primero se hace un prototipo "desde el papel"
+Pasos previos:
+1) Sketch: 
+            Idea general dibujada en papel
+            Con esto llegamos a nuestra casa y preparamos un presupuesto
+            Si no se aprueba el presupuesto no se hace
+            Al igual que el Wireframe se hace para todos los HTML que creemos
+
+2) Wireframe: 
+            Algo mas prolijo que el Sketch
+            Es un palito al cliente de que ya arrancamos a laburar, esperando posibles correcciones
+            Pareciera ser un plano en computadora, hecho con programas
+            Para computadoras trabajamos con contenido en dos columnas, pero para celulares trabajamos en 1
+            Responde a ¿Que contenido, donde y Como (interaccion de la interfaz)?
+
+3) MockUp: 
+            Parte divertida
+            Ya hay colores/tipografias/imagenes
+            Tambien se hace con programas
+            Representacion estatica de un diseño, en calidad media o alta
+
+4) Prototipo interactivo:
+            Se utiliza en UX / UI
+            Representacion navegable del producto final
+
+5) Diseño final:
+            Como lo vamos a ver tanto nosotros como los usuarios en la pagina web
+            Esto es lo unico que se le entrega al cliente
+
++) Podemos ofrecerle al cliente ademas de venderle el servicio de crear la pagina tambien el servicio de actualizarla
+
++) SOLO para practicar esta bueno improvisar codigo 
+
++) Tips para armar un buen prototipo
+            Darle bola a la arquitectura/estructura
+
++) Pagina para crear Wireframes: https://whimsical.com/
+Tambien esta buena balsamik
+Este curso sirve bastante para los freelancers
+
++ Pagina para crear MockUp: Figma (mejor que Canva)
+
++) Es importante tener una vision clara de lo que busca el cliente, para ver si podemos hacerlo y si nuestro presupuesto le sirve
+
++) En el curso vamos a trabajar los Sketch, los Wireframes, los MockUp y el Diseño final
+    El 4) no porque no es relevante para el curso
+
+
++) Con lo que tenemos hasta aca ya podemos dibujar el Sketch de nuestro proyecto final
+
+------------------------------------------------------------------------------
+RECREO: Post recreo, HTML
+------------------------------------------------------------------------------
+
++) Responsive: que se adapte a distintos tamaños de pantalla
+
++) Creamos nuestro archivo de HTML "index.html"
+
+Hay 2 estructuras basicas:
+    html:5
+    html:
+
++) html:5
+
+                                            <!DOCTYPE html>
+lenguaje/idioma que utilizamos              <html lang="en">     
+                                            <head>
+añaden informacion al navegador                 <meta charset="UTF-8">
+     \_de distintos tipos                       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+El titulo/nombre de la pagina web               <title>Document</title>
+                                            </head>
+                                            <body>
+La pagina muestra lo que escribimos aca                                                
+Solo se puede tener 1 h1 por html           </body>
+                                            </html>
+
+
++) Existen hs de 1-6 (de mas grande a más chica)
++) Para tener un h6 se necesita tener los anteriores 5
++) Para escribir parrafos se usa la etiqueta "p"= <p> </p>
++) Los textos Lorem se utilizan para rellenar espacio, <p> "Lorem" </p>
++) Para hacer comentarios se hace:
+    <!-- comentario -->
++) Existen etiquetas para todo, y se ponen dentro del body
++) Vamos a ver etiquetas contenedoras (contiene a otras) y semanticas (sirve para saber que parte estoy creando en el html)
+        Contenedoras: 
+            "header" = <header> </header>
+                En el medio se pone un h con el banner principal del html
+
+            "main"= <main> </main>
+                En el medio se pone un h con el contenido mas importande del html 
+
+            "footer"= <footer> </footer>
+                Se utiliza en un h para crear o para tener los derechos de autor
+
+
++) Las etiquetas son cajas, porque contienen cosas
++) Existen estiquetas de :
+    Bloque: ocupan el 100% del ancho del navegador (por cada etiqueta es un renglon)
+    Linea: ocupa solo su espacio (por cada etiqueta es un texto/imagen al lado del otro)

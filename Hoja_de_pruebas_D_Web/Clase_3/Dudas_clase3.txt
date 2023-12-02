@@ -1,0 +1,7 @@
+Página con todos las propiedades de CSS: https://carontestudio.com/blog/listado-de-propiedades-css/
+    -Incluye nombre, descripcion y valores de cada una
+
+
+Página con distintos tipos de tipografía: https://fonts.google.com/
+
+Como hago para aplicar cambios a un solo html

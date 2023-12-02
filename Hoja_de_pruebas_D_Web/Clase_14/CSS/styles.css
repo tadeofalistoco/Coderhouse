@@ -1,0 +1,182 @@
+/* FORMATO MOBILE */
+
+/* Estilos generales */
+
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* Demas estilos generales */
+body{
+    background-color: #0e0d0d;
+}
+
+/* Estilos de header */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav ul{
+    list-style: none;
+    color: whitesmoke;
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Estilos de main */
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,33%);
+    gap: 1rem;
+    margin: 3rem 2rem 3rem 2rem;
+    height: 70vh;
+}
+
+main .img-2, .img-5{
+    display: none;
+}
+
+main div img{
+    width: 100%;
+    height: 100%;
+    /* Propiedad que permite reestablecer como se van a comportar las imagenes respecto al tamaño de su contenedor */
+    object-fit: cover; /* El valor cover hace que ocupe el 100% del contenedor */
+}
+
+/* Estilos de footer */
+footer{
+    margin-top: 5rem;
+    text-align: center;
+    color: whitesmoke;
+}
+
+/* Esta pagina ya esta terminada, ahora vamos a trabajar las media queries */
+
+/* Media queries de tablet */
+@media screen and (min-width:600px) {
+    body{
+        background-color: #0e0d0e; /* podemos cambiar el color para chequear que al cambiar la pantalla se aplican las media queries */
+    }
+
+    /* lo que necesita cambios ahora es el main */
+    main{
+        /* No hace falta poner display: grid ya que ya esta puesto en el codigo original */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50%);
+    }
+
+    main .img-4{
+        grid-column: span 2; /* Esta propiedad dice cuantos espacios (columnas) ocupa el contenido (imagen) */
+    }
+}
+
+/* Media queries de desktop */
+@media screen and (min-width: 1024px) {
+    header{
+        justify-content: space-between;
+        margin: 0px 20px;
+    }
+    
+    main .img-2, .img-5{
+        display: block;
+    }
+
+    main{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 40% 40% 20%;
+        grid-template-areas: 
+        "labios dedos dedos oceano"
+        "labios graffiti graffiti oceano"
+        "ojos ojos ojos ojos";
+    }
+
+    main .img-1{
+        grid-area: labios;
+    }
+
+    main .img-2{
+        grid-area: dedos;
+    }
+
+    main .img-3{
+        grid-area: oceano;
+    }
+
+    main .img-4{
+        grid-area: graffiti;
+    }
+
+    main .img-5{
+        grid-area: ojos;
+    }
+
+    /* Esta media querie quedó con la img-5 superpuesta con el footer, porque en el mq de tablets pusimos grid-template-rows
+       y para grid-template-areas no conviene usar este. En este caso habiamos puesto inicialmente que las primeras dos filas ocupaban el 50% cada una
+       por lo tanto al agregar otra row con la imagen de los ojos, esta supera el 100% del main, al cual le habiamos ordenado mediante 70hv que solo
+       ocupe el 70% de la altura del navegador, lo que provocó que la imagen pise al footer */
+
+    /* Finalmente lo corregi volviendo a escribir el grid-template-rows en el codigo de desktop, corrigiendo las proporciones de las filas */
+}
+
+
+
+
+.la-caja{
+    
+    margin: 100px;
+    width: 900px;
+    height: 400px;
+    background-color: antiquewhite;
+    transition: 2s;
+}
+
+.la-caja:hover{
+    transform: scale(1.2);
+    transition: 2s;
+    background-color: red;
+}
+
+.caja-animada{
+    margin: 200px;
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+    color: antiquewhite;
+}
+
+/*
+.contenedor-de-animaciones .caja-animada{
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+*/
+
+.contenedor-de-animaciones .caja-animada{
+    animation-name: cajita-animada;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes cajita-animada{
+    0%{
+        transform: scale(1);
+    }
+
+    15%{
+        transform: scale(1.2);
+    }
+
+    25%{
+        transform: scale(1.5);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}

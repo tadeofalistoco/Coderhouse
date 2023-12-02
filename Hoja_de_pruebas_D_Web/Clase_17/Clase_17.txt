@@ -1,0 +1,36 @@
+CONOCIENDO A NUESTRO CLIENTE
+-Preguntas para hacerle al cliente acerca del publico/usuario objetivo:
+    -Cual es el contexto del usuario y cuanto puede variar
+    -Cuales son sus valores y prioridades
+    -Cuales son sus objetivos (que busca y hacia donde va la pagina web)
+    -Cuales son los obstaculos para conseguir esos objetivos
+
+-Procedimiento de planear la pagina (analisis de requerimentos)
+    -Analizar las necesidades del cliente (mediante una entrevista)
+    -Definir el alcance
+    -Que requerimentos funcionales (que funcion y lugar tiene cada elemento) y no funcionales (que tan rapido va la pagina) espera que tenga la pagina
+    -Realizar entregable con lo que podemos ofrecer (wireframe), junto a un presupuesto
+
+PRESUPUESTO Y PRECIO PARA FREELANCE
+-Saber cuanto necesito yo para vivir, en base a eso saber cuantos trabajos puedo hacer en el mes, y en base a eso decidir a cuanto cobrar cada uno
+
+MANERAS DE ARMAR UN PRESUPUESTO (por tiempo invertido, por necesidades del proyecto, por necesidades nuestras)
+-Este no se debe entregar hasta que no tenemos todos los requerimentos
+-En este debemos tener detallado:
+                                -Que engloba el proyecto
+                                -Cuantas secciones va a tener
+                                -Maquetacion - Para que navegadores será
+                                -Que lenguajes va a utilizar
+                                -Publico objetivo
+                                -Que herramientas utilizaremos nosotros para el trabajo
+                                -Que engloba nuestro trabajo
+                                -Que engloba las necesidades del cliente
+
+-Nunca se arranca un trabajo sin haber cobrado antes (se cobra una seña porcentual)
+-Tambien se utilizan instancias de correcciones, en estas tambien se puede cobrar (algo asi como en formato de cuotas)
+-Debemos aclarar que el presupuesto se mantiene durante cierta cantidad de dias, porque si pasan dos meses en el medio la inflacion nos corre el precio 
+-Tambien debemos aclarar el tiempo que el trabajo nos va a tomar, el precio, los medios de pago
+-Si el cliente nos pide que presentemos una factura tambien podemos incluir eso en el precio
+-Existe la posibilidad de que la pagina requiera mantenimiento, en ese caso se puede:
+                                                                                    -Cobrar la capacitacion del cliente para hacer este mantenimiento
+                                                                                    -Vender nuestro servicio de mantenimiento

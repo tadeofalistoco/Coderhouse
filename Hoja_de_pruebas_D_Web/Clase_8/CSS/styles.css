@@ -1,0 +1,16 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos de ejemplo.html */
+a:link{ /* Los estilos se le van a aplicar a los links que aun no fueron visitados */
+
+    color: blueviolet;
+}
+
+a:visited{ /* Los estilos se le van a aplicar a los links que ya fueron visitados */
+    color: brown;
+}

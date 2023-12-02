@@ -1,0 +1,55 @@
+Página que explica tipos de etiquetas de HTML:
+https://lenguajehtml.com/html/semantica/que-son/
+https://lenguajehtml.com/html/introduccion/tabla-periodica-html5/
+
+
+Página con todos las propiedades de CSS: 
+    -Incluye nombre, descripcion y valores de cada una
+    https://carontestudio.com/blog/listado-de-propiedades-css/
+
+
+Página con distintos tipos de tipografía: 
+https://fonts.google.com/
+
+
+Página con alternativas de frameworks que no sean bootstrap
+https://ciberninjas.com/bootstrap-alternativas/
+
+
+Página de bootstrap
+https://getbootstrap.com/
+
+
+Link de bootstrap.css
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
+Link de bootstrap.js
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+Pagina con distintas paletas de colores
+https://coolors.co/
+
+Pagina con colores para gradientes
+https://cssgradient.io/
+
+Pagina con sugerencias de contrastes de colores
+https://www.siegemedia.com/contrast-ratio
+
+Pagina de animaciones 
+https://animate.style/
+
+Otra pagina con animaciones 
+https://michalsnik.github.io/aos/
+
+Version gratuita de Photoshop (photopea)
+https://www.photopea.com/
+
+Pagina que agrega nitidez a las imagenes
+https://zyro.com/es/herramientas/upscaler-de-imagenes
+
+Pagina para quitarle peso a las imagenes
+https://tinypng.com/
+
+Pagina con posibles precios de proyectos (con este curso buscamos en "Diseño y maquetación de sitio responsivo/adaptativo")
+https://tarifario.org/

@@ -1,0 +1,19 @@
+CLASE 0 JAVASCRIPT
+
+Elementos basicos de este lenguaje:
+-Datos: numeros, cadenas de texto, booleanos
+-Variables: globales y locales
+-Objetos: similares a los diccionarios en Python
+-Arrays: similar a las listas en Python
+-Funciones
+
+-El codigo de Javascript se escribe en la consola
+
+-A lo largo del curso vamos a trabajar con algoritmos: estos se basan en recibir datos, procesarlos, y ofrecer una respuesta
+    -Esta forma de trabajo tambien se basa en desglozar un problema y resolverlo/atacarlo por partes.
+
+ENTREGAS
+-Clase 4
+-Clase 9
+-Clase 13 
+-Proyecto final Clase 17

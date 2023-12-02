@@ -1,0 +1,6 @@
+ARRAYS
+
+-Son iguales a las listas en python, y estas pueden almacenar: numeros, strings, objetos, etc
+-Estos se declaran con corchetes [] separando sus valores con comas
+
+METODOS DE ARRAYS (funciones aplicables a los arrays)

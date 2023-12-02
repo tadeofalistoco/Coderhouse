@@ -1,0 +1,11 @@
+FUNCIONES DE ORDEN SUPERIOR
+
+-Ya sabemos como declarar e invocar funciones
+-Ya sabemos que las funciones tienen un marco de accion muy amplio y que al crearlas nos conviene hacerlas muy generales para poder usar la misma funcion en muchos casos distintos
+
+-Vamos a ver metodos de busqueda y metodos de transformación de los arrays
+
+-Dato importante para las funciones:
+    -Cuando una no funciona, intentar sacarle o agregarle un "return" y lo mismo con las llaves
+        -Aveces en las funciones flecha estos pueden estar de mas y hacer que no funcione el codigo
+        -Usualmente el return va de la mano con las llaves

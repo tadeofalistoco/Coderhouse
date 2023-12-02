@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link del bootstrap.css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Link de nuestro css -->
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Clase 9</title>
+</head>
+<body>
+    <!-- Ejemplo de copiar codigo de la pagina de bootstrap, en este caso un menu de navegacion -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+
+                <!-- ACA ENCONTRAMOS UN ERROR, no porque no funcione, sino porque a nuestra pagina no le hace sentido, entonces lo borramos, o lo corregimos
+                     (esta era una opcion del navegador que estaba deshabilitada con la clase "disabled")
+                     (en este caso no lo borro para poder marcar este comentario, pero lo correcto en nuestro codigo seria borrarlo para no tener lineas de codigo al pedo)
+
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                </li>
+                -->
+                </ul>
+                <!-- ACA ENCONTRAMOS OTRO ERROR, no porque no funcione, sino porque a nuestra pagina no le hace sentido, entonces lo borramos 
+                     (en este caso no lo borro para poder marcar este comentario, pero lo correcto en nuestro codigo seria borrarlo para no tener lineas de codigo al pedo)
+
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> 
+                -->
+
+            </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Ejemplo de sistema de grillas de Bootstrap -->
+    <div class="container-fluid">
+        <div class="row">
+            <p class="col-9">ESTE PARRAFO OCUPA 9 COLUMNAS       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sed magni eveniet modi atque eum quidem dolor quis quod accusantium ratione velit error illo, odio dolores adipisci tempora perspiciatis minima.</p>
+            <p class="col-3">ESTE PARRAFO OCUPA 3 COLUMNAS       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sed magni eveniet modi atque eum quidem dolor quis quod accusantium ratione velit error illo, odio dolores adipisci tempora perspiciatis minima.</p>
+        </div>
+        <div class="row">
+            <p class="col-6">ESTE PARRAFO OCUPA 6 COLUMNAS       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sed magni eveniet modi atque eum quidem dolor quis quod accusantium ratione velit error illo, odio dolores adipisci tempora perspiciatis minima.</p>
+            <p class="col-6">ESTE PARRAFO OCUPA 6 COLUMNAS       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sed magni eveniet modi atque eum quidem dolor quis quod accusantium ratione velit error illo, odio dolores adipisci tempora perspiciatis minima.</p>
+        </div>
+    </div>
+
+    <!-- Link/Script del javascript de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+SASS I 
+
+-Es un preprocesador de codigo de CSS
+    -Si no me equivoco es como una extension de sus estilos
+    -Para este se debe crear todo el codigo desde 0
+-Este permite crear palabras claves que guardan un conjunto de propiedades con estilos y condiciones
+-Permite tener un codigo mas corto y prolijo
+-Podemos tener mas de una hoja de estilos de SASS a diferencia de CSS que es solo una
+-En este existen dos tipos de hojas para trabajar este lenguaje: .scss (esta es la mas parecida a CSS) y .sass
+
+PASOS DE LA CLASE
+-Primero descargamos Node-Js     
+-Creamos una carpeta (copiamos una de alguna clase)
+-Asi como creamos la carpeta CSS, creamos otra que se llame SCSS o SASS
+    -Dentro de esta va el archivo.scss
+-Abrimos la terminal de VSC y comenzamos a trabajar en la carpeta
+    -Damos inicio a las dependencias de node.js con el comando: npm init
+        -Para esto debe estar instalado correctamente node js
+    -Le damos okey a todo lo que nos aparece (porque todos esos datos se pueden reemplazar despues)
+    -Al hacer esto se creará un archivo llamado package.json
+        -En este archivo luego vamos a declarar una directiva/orden 
+        -En esta directiva daremos la orden de que todo lo que se escriba en el archivo.sass se replique en nuestro archivo.css
+            -Esto se hace ya que los navegadores no pueden leer SASS, solo se manejan con CSS
+-Ahora vamos a instalar todas las dependencias de node js para posteriormente poder utilizarlo con SASS
+    -Para esto: npm install -D node-sass nodemon
+
+
+DIRECTIVA DE package.json
+-Vamos dentro del archivo
+-Dentro de scripts, al final de la linea "test" ponemos una coma y escribimos lo siguiente abajo:
+        "build-css": "node-sass --include-path scss SCSS/styles.scss CSS/styles.css",
+        "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+                En esto que escribimos arriba tenemos que poner la ruta de nuestros archivos con el mismo nombre, y respetando mayusculas
+
+MAS PASOS DE CLASE
+-En la terminal ejecutamos: npm run watch-css
+    -Esto genera el funcionamiento de lo que pusimos en el script de package.json
+    -Ahora ya tenemos conectado SCSS a CSS
+    -Al hacer esto, todo lo que teniamos en ese archivo.css se elimina, por esto conviene hacer un backup de nuestro archivo.css antes de conectarlos.
+    -Se recomienda correr este codigo siempre que abrimos VSC nuevamente
+
+
+APUNTES
+
+-SASS tiene distintas utilidades/superpoderes a diferencia de CSS:
+
+    -Nesting:  
+        -Utiliza una forma distinta a CSS para implementar la ruta de especificidad
+        -Este pone la etiqueta hija abriendo llaves, como si fuera otra de las propiedades de la etiqueta padre
+        -Luego en el css se ve como dos estilos distintos, uno con propiedades del padre, y abajo otro con ruta de especificidad como ya la conociamos 
+        -Basicamente el nesting usa el mismo formato de etiqueta padre y etiquetas hijas que HTML
+        -Es necesario no saltearse ninguna etiqueta contenedora en la ruta
+
+    -@import: 
+        -Sirve para conectar distintos archivos.scss entre si
+        -Para esto primero creamos una carpeta dentro de la carpeta SCSS que en este caso la vamos a llamar extra (pero tiene otro nombre)
+        -Dentro de esta creamos uno o mas archivos con un nombre especifico de para que html es, y el cual se escribe "_nombredelarchivo"
+        -El que tenemos que vincular a CSS es el principal
+        -A estos archivos se le llaman archivos parciales
+        -Para vincularlos al .css debemos vincularlos al styles.scss (osea el principal)
+            -Nos posicionamos en styles.scss y ponemos " @import "ruta/carpetaextra/archivo"; "
+            -importante poner el punto y coma al final
+        -Para evitar inconvenientes, si queremos usar propiedades de un parcial, en otro parcial, debemos importar una vez mas adentro del parcial
+        
+    -$Variables:
+        -Sirve por ejemplo para crear valores de propiedades
+        -Estas se suelen poner en un archivo parcial, por lo que tambien se deben invocar con el @import
+        -Estas solo pueden contener 1 valor por cada una
+
+    -Calculos:
+        -Podemos usar calculos, por ejemplo en las medidas (como se puede ver en styles.scss)

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Esta vez para poner la ruta primero debemos salir de la carpeta en la que estamos (pages) para estar en el mismo nivel que la carpeta del archivo.css (osea dentro de Clase_3) -->
+    <!-- Para esto ponemos (../) al comienzo de la ruta -->
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <title>Ejemplo3 - desarrollo web</title>
+</head>
+
+<body>
+    <header id="interno" >
+        <h1> H1 Este es el encabezado!</h1>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>
+                    <a href="pages/productos.html">Productos
+                    </a>
+                    </li>
+                <li>Contacto</li>    
+                <li>
+                    <a href="pages/ejemplo.html" target="_blank">Pagina con ejemplos de listas</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div> 
+            <h2 class="propiedades_foto"> H2 Esta es la primer seccion, contiene una foto </h2>
+            <p> Este es un parrafo con la etiqueta "p" </p>
+            <img src="img/foto airve.jpg" alt="la foto que salgo lindo">
+        </div>
+
+        <div> 
+            <h2> H2 Esta es la segunda seccion, contiene el link a un video </h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/upbjHe-hWGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+    </main>
+
+    <footer>
+        <h2> H2 Este es el footer, contiene los derechos de autor y las fuentes</h2>
+        <h3> H3 Todos los derechos reservados</h3>
+        <a href="https://www.coderhouse.com" target="_blank"> Ir a coderhouse</a>
+
+        <h3>H3 Aca ponemos otro h3 ya que la etiqueta "a" es de linea, entonces si no lo hago este link estaría pegado a un costado del de arriba</h3>
+        <a href="#interno"> Esto te lleva al encabezado</a>
+
+    </footer>
+
+</body>
+</html>

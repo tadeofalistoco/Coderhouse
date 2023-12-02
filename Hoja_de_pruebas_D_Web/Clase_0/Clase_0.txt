@@ -1,0 +1,57 @@
+CLASE 0 + Soy Dalto
+
+Conceptos básicos
+    Que es desarrollo web
+    Cuales son las herramientas para el diseño y desarrollo web
+
+En desarrollo web existen 3 tipos de clientes:
+    El que nos contrata
+    El usuario que navega la página
+    El motor de busqueda
+
+Se trabaja en 3 principios básicos
+    Navegabilidad:  ¿Como pasar de una página a otra?
+                    Donde el ususario va a poder acceder
+    Interactividad: ¿Como pasar de un medio a otro, de una aplicacion a otra? 
+                    ¿Como relacionar los diferentes medios?
+    Arquitectura de la informacion: ¿Como organizar esta ultima?
+
+En el curso usamos HTML-5 y CSS-3:
+    HTML escribe las palabras y le da estructura a las paginas
+    CSS decora la pagina ya hecha con propiedades (colores, tipografias, bordes)
+
+HTML:
+    -El contenido del codigo se escribe dentro de etiquetas/tags
+
+CSS:
+    -El contenido de las propiedades va en pares y en inglés: colour = green
+
+En el desarrollo web se utilizan 3 procesos: (ej: un auto)
+-Con el primero le damos formato/estructura a la pagina (chasis/esqueleto)
+-Con el segundo decoramos esa estructura (pintura)
+-Con el tercero ya le agregamos funcionalidad a cada una de las partes (motor y computadora)
+
+Estos 3 procesos se desarrollan con 3 lenguajes:
+1- HTML
+2- CSS
+3- Javascript
+
+HTML
+-Siempre tiene que haber un archivo index, porque este va a ser el primero al que la pagina te lleve al entrar al servidor
+    -Osea en el caso de las redes sociales el index suele ser la pagina de inicio de sesion
+-El contenido del codigo se escribe dentro de etiquetas/tags
+-Nos manejamos con Etiqueta - Atributo - Valor (texto - color - rojo)
+-Se deben seguir las reglas semanticas
+    -Cada codigo debe ir en su etiqueta correspondiente, por mas que esto no afecte su funcionamiento o la manera en que se muestra
+    -Esto se refiere, por ejemplo, a que el encabezado DEBE ir en una etiqueta <header> 
+        -Aunque si lo pusieramos en una etiqueta <p> tambien funcionaria el codigo
+
+
+-Los html:5 se comprenden de un head y un body
+    -Todo el contenido visible de la pagina se muestra en el body
+
+-Las etiquetas de bloque completan el espacio delimitado por la etiqueta que las contiene
+    -No siempre es el ancho de toda la pagina
+
+-La etiqueta <a href=""></a> aplica la idea de Etiqueta - Atributo - Valor
+    - <a> es la Etiqueta, href el Atributo, y el link/ruta que pongamos entre comillas es el Valor

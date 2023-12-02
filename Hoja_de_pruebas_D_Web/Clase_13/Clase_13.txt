@@ -1,0 +1,74 @@
+SASS II
+
+PASOS DE LA CLASE
+-Volvemos a copiar la clase 3 (basicamente porque es sencilla y tiene un archivo.css)
+-Siempre que queramos inicializar sass ponemos estos dos comandos
+    -npm init
+    -npm install -D node-sass nodemon
+
+    Y luego de modificar package.json:
+    -npm run watch-css
+
+-SIEMPRE que abrimos nuestro proyecto y queramos trabajar con SASS, debemos volver a correr el comando "npm run watch-css"
+
+-Para un repositorio, la carpeta node_modules, la carpeta SASS y los archivos.json, van en el .gitignore
+    -Para nuestro proyecto, solo ponemos la carpeta node_modules
+
+-Esta vez a la carpeta "extra" la vamos a llamar "utilidades" (tambien se la llama utilities)
+
+
+MAS UTILIDADES DE SASS
+
+-$Variables:
+    -Sirve por ejemplo para crear valores de propiedades
+    -Estas se suelen poner en un archivo parcial, por lo que tambien se deben invocar con el @import
+    -Estas solo pueden contener 1 valor por cada una
+
+
+-Listas:
+    -Funcionan igual que las variables, solo que dentro ponemos mas valores, de la misma familia
+    -Para iterarlas utilizamos la pseudoclase: nth($lista, numerodeposicion);
+
+-Mapas:
+    -Es un conjunto de variables
+    -Iguales que las variables y las listas pero estas pueden contener valores de distintas familias
+    -Tambien cambia el formato, se puede ver en _mapas.scss
+        -El formato inicial es el mismo pero este, luego de los dos puntos abre un parentesis y pone ahi dentro el contenido
+    -Para utilizarlos utilizamos: map-get($mapa, key)
+        -La key es cual de las variables creadas en el mapa se quiere utilizar
+        -Estos se usan dentro de los estilos de una etiqueta/class
+    -Funcionan parecido a los diccionarios de Python, los prefiero antes que a las listas
+
+-Bucles:
+    -Se basa en iterar un elemento que contiene varios elementos
+    -En el ejemplo creamos un bucle a traves de un mapa, el cual contiene medidas de botones
+    -Con la utilidad @each vamos a iterar el contenido del mapa
+        -Esta utiliza palabras claves que se escriben con un $ al comienzo y que se separan entre si con una coma
+        -En este caso utilizamos dos palabras claves: 
+            -La que está en la primer posicion hace referencia al primer termino dentro del mapa (posible nombre de la class)
+            -La que está en la segunda posicion hace referencia al segundo termino dentro del mapa (valor del primer termino)
+        -Luego de las palabras clave escribimos "in" y despues el nombre del elemento a iterar, en este caso el $mapa
+        -Finalmente abrimos llaves y dentro de este bucle creamos una class
+            -Cuyo nombre tambien se puede configurar mediante la iteracion 
+                -Poniendo un # donde se quiere poner el nombre de la class
+                -Y luego poniendo entre llaves la palabra clave referente al posible nombre de la class
+            -Y los valores de las propiedades tambien se configuran con la otra palabra clave
+
+-Mixin:
+    -En _mixin.scss se entiende bastante bien
+    -Existen con y sin parametros, la diferencia es que el primero lleva parentesis y el otro no
+    -Para invocar un mixin en otro archivo:
+        -Primero usar @import
+        -Luego en la etiqueta que queramos usar el mix, debemos poner " @include nombredelmix; "
+            -Funciona como si fuera otra propiedad de CSS, la cual en realidad contiene un paquete de propiedades y valores
+
+-Extend:
+    -Funciona igual que el mixin sin parametros
+    -Este compila, en el archivo.css, todas las etiquetas en las que se uso mixin, separandolas entre si con una coma
+    -Esto sirve para ahorrar lineas de codigo, escribiendo todo en un mismo lugar, en vez de repetirlo cada vez que se usa
+
+-Condicionales:
+    -Funciona como cualquier condicional, pero nosotros manejamos si se cumple o no la condicion
+
+PARA LA TERCER PRE-ENTREGA
+-Se pide: nesting, import, variables, mixin y extend

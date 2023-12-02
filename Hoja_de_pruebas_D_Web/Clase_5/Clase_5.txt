@@ -1,0 +1,70 @@
+FLEXBOX
+    -Conjunto de propiedades de CSS
+    -Se basa en un contenedor (etiqueta padre) para ordenar a sus items (etiqueta hijo)
+                                \_ ej: header, main, footer, div
+    -Sirve para dar posicion, tamaño y distribuir las cajas
+    -Es perfecto para el Responsive Design
+    -Solo sirve para filas o columnas a la vez, no ambas
+
+Propiedades de padres e hijos: Propiedades (+) y Valor (-)
+    +display:  
+        -hay un monton
+        -none
+        -inline
+        -inline-block
+        -flex
+        -grid
+
+    +flex-direction: posicion y direccion
+        row (fila) (es el predeterminado, al pedo ponerlo)
+        column (columna)
+        column-reverse (orden al reves y desde el margen derecho) 
+        row-reverse (orden al reves y desde el fondo de la pagina) 
+
+    +flex-wrap: decide que ocurre cuando las etiquetas hijas se quedan sin espacio en el contenedor padre (distribucion/tamaño)
+        -wrap: el contenido extra pasa a una siguiente linea (abajo)
+        -nowrap: se achican para entrar (cambian su tamaño) (es el predeterminado)
+        -wrap-reverse: el contenido extra pasa a una linea arriba
+
+    +flex-flow: convina posicion y distribucion
+        -primero valor de propiedad direction y despues valor de propiedad wrap
+
+    +justify-content: es la propiedad del centrado de texto (tipo Microsoft Word), se usa en el eje principal (vertical u horizontal dependiendo de flex-direction) trabaja con el largo
+        -flex-start:
+        -flex-end:
+        -center:
+        -space-between:
+        -space-around:
+        -space-evenly:
+
+    +align-items: hace lo mismo que justify-content pero este trabaja con el eje secundario (tambien depende de flex-direction), trabaja con la altura o anchura
+        -flex-start
+        -center
+        -flex-end
+        -stretch
+        -baseline
+
+    +align-content: no se que mierda hace
+        -stretch
+        -flex-start
+        -flex-end
+        -center
+        -space-between
+        -space-around
+        -space-evenly
+
+Propiedades para los flex items (hijos)
+    +order
+
+Propiedad para la alineacion de textos dentro de una etiqueta contenedora
+    +text-align
+        -left
+        -right
+        -center
+        -justify (la que distribuye en Word)
+
+Para escribir en distintos renglones hay muchas formas, hoy vimos 3:
+    -Ponemoms la etiqueta <br> para hacer saltos de linea
+    -Metemos cada renglon que queramos en una etiqueta <span> y luego, como es de linea, aplicamos la propiedad "display: block" para convertirlas en etiquetas de bloque
+        -Lo positivo de esta es que ya con esto nos queda de tal manera que podemos agregar posteriores propiedades a cada renglon
+    -Usamos una etiqueta de parrafo distinta para cada parrafo ya que esta es de bloque

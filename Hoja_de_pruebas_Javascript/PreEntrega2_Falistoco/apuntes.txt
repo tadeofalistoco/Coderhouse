@@ -1,0 +1,6 @@
+OBJETIVOS DE LA ENTREGA
+-Poner un prompt (input)
+-Declarar variables
+-Declarar funciones que realicen suma, resta, concatenacion, division, porcentaje, etc
+-A esto agregarle el uso de objetos y/o arrays, utilizando sus respectivos metodos
+-Devolver un output/salida de los datos procesados mediante un alert o un console.log 

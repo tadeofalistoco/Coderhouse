@@ -1,0 +1,24 @@
+DOM: Document Object Model (Modelo de Objetos del Documento)
+
+Sirve para conectar el archivo.html al archivo.js 
+    -Accedemos a nuestro html desde el javascript y modificarlos
+    -Traemos elementos especificos de nuestro html (como puede ser un nav, una class, un div, etc) los referenciamos en el javascript y luego los modificamos
+    -A todas las variables que creamos accediento al html se les llama elementos del DOM
+        -Estas hacen referencia a distintos elementos del html
+        -Por ende: los elementos del html se llaman "elementos" y sus representantes en el javascript se llaman "elementos del DOM"
+
+TEORIA DE LA CLASE
+
+-El DOM es un Modelo de Objetos del Documento: Osea que es una estructura hecha a base de objetos de Javascript. 
+    -Asi como hay palabras globales/reservadas en cualquier lenguaje, en JS la palabra "document" es un objeto preexistente, con sus respectivos pares de propiedad-valor y sus respectivos metodos
+        -Este objeto document, que funciona como un modelo de nuestro documento.html, copia/guarda/contiene todos sus elementos, y nos permite acceder a ellos desde nuestro archivo.js
+    -El objeto document nos permitira acceder a cualquier archivo.html que tengamos enlazado al archivo.js
+    -Los elementos que llamariamos "etiquetas" en un archivo.html, en el DOM se llaman "nodos", y comprenden la misma jerarquia y posicion que llevan en el archivo.html
+
+-Algunos tipos de nodos:
+    -Nodo de documento: es el nodo raiz, representa al html en su totalidad
+    -Nodo de elemento: representa los elementos/etiquetas del html
+    -Nodo de texto: representa el contenido (texto) de esas etiquetas
+    -Nodo de comentario: representa los comentarios del html
+    -Nodo de tipo de documento: representa la declaracion del tipo de documento: "<!DOCTYPE html>"
+    -Nodo de atributo: representa los atributos de cada par "atributo-valor" en etiquetas, ej: <a href= "peso_libre.html" >Peso Libre </a> (href seria el nodo atributo) ("peso_libre.html" seria el valor)

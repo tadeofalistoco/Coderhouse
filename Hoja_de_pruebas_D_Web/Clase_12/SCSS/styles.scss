@@ -1,0 +1,23 @@
+//CLASE 12
+//Para comentar en SASS utilizamos la doble barra al comienzo, se utiliza una en cada linea que queramos comentar, al igual que el # en python
+/* Si hago un comentario de CSS, este si se muestra en ambos archivos */
+
+/* Utilidades de SASS */
+
+//import de variables
+@import "extra/variables";
+
+/* Nesting */
+header{
+    background-color: aqua;
+    h1{
+        /* $variables */
+        background-color: $color-principal;
+
+        /* Calculos */
+        width: ($medida-principal + 100) * 2
+    }
+}
+
+/* @Import */
+@import "extra/nosotros";
